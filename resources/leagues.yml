@@ -1,0 +1,198 @@
+#This file REQUIRES "Points-required" option in each league if "Options.Leagues.Formula.Enabled" is set to false.
+#Use this option ONLY if you want to set points required for each league without a formula.
+#I strongly recommend you to use the default formula or with some modifications.
+Leagues:
+  unranked:
+    Name: "No Ranked"
+    Displayname: "&8No Ranked"
+    Color: "&8"
+    #This is the tag. It's just cosmetic, you can use it if you don't want too much text and only want to use like a badge.
+    Tag: ""
+    #Points for the first rank is always 0. Even if other amount is specified.
+    Points-required: 0
+  bronze-5:
+    Name: "Bronze V"
+    Displayname: "&eBronze V"
+    Color: "&e"
+    Tag: "&eB-V"
+    Points-required: 1000
+  bronze-4:
+    Name: "Bronze IV"
+    Displayname: "&eBronze IV"
+    Color: "&e"
+    Tag: "&eB-IV"
+    Points-required: 1200
+  bronze-3:
+    Name: "Bronze III"
+    Displayname: "&eBronze III"
+    Color: "&e"
+    Tag: "&eB-III"
+    Points-required: 1450
+  bronze-2:
+    Name: "Bronze II"
+    Displayname: "&eBronze II"
+    Color: "&e"
+    Tag: "&eB-II"
+    Points-required: 1750
+  bronze-1:
+    Name: "Bronze I"
+    Displayname: "&eBronze I"
+    Color: "&e"
+    Tag: "&eB-I"
+    Points-required: 2100
+  silver-5:
+    Name: "Silver V"
+    Displayname: "&fSilver V"
+    Color: "&f"
+    Tag: "&fS-V"
+    Points-required: 2500
+  silver-4:
+    Name: "Silver IV"
+    Displayname: "&fSilver IV"
+    Color: "&f"
+    Tag: "&fS-IV"
+    Points-required: 2950
+  silver-3:
+    Name: "Silver III"
+    Displayname: "&fSilver III"
+    Color: "&f"
+    Tag: "&fS-III"
+    Points-required: 3450
+  silver-2:
+    Name: "Silver II"
+    Displayname: "&fSilver II"
+    Color: "&f"
+    Tag: "&fS-II"
+    Points-required: 4000
+  silver-1:
+    Name: "Silver I"
+    Displayname: "&fSilver I"
+    Color: "&f"
+    Tag: "&fS-I"
+    Points-required: 4600
+  gold-5:
+    Name: "Gold V"
+    Displayname: "&6Gold V"
+    Color: "&6"
+    Tag: "&6G-V"
+    Points-required: 5260
+  gold-4:
+    Name: "Gold IV"
+    Displayname: "&6Gold IV"
+    Color: "&6"
+    Tag: "&6G-IV"
+    Points-required: 5950
+  gold-3:
+    Name: "Gold III"
+    Displayname: "&6Gold III"
+    Color: "&6"
+    Tag: "&6G-III"
+    Points-required: 6700
+  gold-2:
+    Name: "Gold II"
+    Displayname: "&6Gold II"
+    Color: "&6"
+    Tag: "&6G-II"
+    Points-required: 7500
+  gold-1:
+    Name: "Gold I"
+    Displayname: "&6Gold I"
+    Color: "&6"
+    Tag: "&6G-I"
+    Points-required: 8350
+  diamond-5:
+    Name: "Diamond V"
+    Displayname: "&bDiamond V"
+    Color: "&b"
+    Tag: "&bD-V"
+    Points-required: 9250
+  diamond-4:
+    Name: "Diamond IV"
+    Displayname: "&bDiamond IV"
+    Color: "&b"
+    Tag: "&bD-IV"
+    Points-required: 10200
+  diamond-3:
+    Name: "Diamond III"
+    Displayname: "&bDiamond III"
+    Color: "&b"
+    Tag: "&bD-III"
+    Points-required: 11200
+  diamond-2:
+    Name: "Diamond II"
+    Displayname: "&bDiamond II"
+    Color: "&b"
+    Tag: "&bD-II"
+    Points-required: 12250
+  diamond-1:
+    Name: "Diamond I"
+    Displayname: "&bDiamond I"
+    Color: "&b"
+    Tag: "&bD-I"
+    Points-required: 13350
+  obsidian-5:
+    Name: "Obsidian V"
+    Displayname: "&5Obsidian V"
+    Color: "&5"
+    Tag: "&5O-V"
+    Points-required: 14500
+  obsidian-4:
+    Name: "Obsidian IV"
+    Displayname: "&5Obsidian IV"
+    Color: "&5"
+    Tag: "&5O-IV"
+    Points-required: 15700
+  obsidian-3:
+    Name: "Obsidian III"
+    Displayname: "&5Obsidian III"
+    Color: "&5"
+    Tag: "&5O-III"
+    Points-required: 16950
+  obsidian-2:
+    Name: "Obsidian II"
+    Displayname: "&5Obsidian II"
+    Color: "&5"
+    Tag: "&5O-II"
+    Points-required: 18250
+  obsidian-1:
+    Name: "Obsidian I"
+    Displayname: "&5Obsidian I"
+    Color: "&5"
+    Tag: "&5O-I"
+    Points-required: 19600
+  champion-3:
+    Name: "Champion III"
+    Displayname: "&dChampion III"
+    Color: "&d"
+    Tag: "&dC-III"
+    Points-required: 21000
+  champion-2:
+    Name: "Champion II"
+    Displayname: "&dChampion II"
+    Color: "&d"
+    Tag: "&dC-II"
+    Points-required: 22450
+  champion-1:
+    Name: "Champion I"
+    Displayname: "&dChampion I"
+    Color: "&d"
+    Tag: "&dC-I"
+    Points-required: 23950
+  master-3:
+    Name: "Master III"
+    Displayname: "&aMaster III"
+    Color: "&a"
+    Tag: "&aM-III"
+    Points-required: 25500
+  master-2:
+    Name: "Master II"
+    Displayname: "&aMaster II"
+    Color: "&a"
+    Tag: "&aM-II"
+    Points-required: 27100
+  master-1:
+    Name: "Master I"
+    Displayname: "&aMaster I"
+    Color: "&a"
+    Tag: "&aM-I"
+    Points-required: 28750
