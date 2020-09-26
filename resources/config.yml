@@ -1,0 +1,203 @@
+#        _                  _
+#       /_\ | |___ _ _  ___ ___| |   ___ __ _ __ _ _  _ ___ ___
+#      / _ \| / _ \ ' \(_-</ _ \ |__/ -_) _` / _` | || / -_|_-<
+#     /_/ \_\_\___/_||_/__/\___/____\___\__,_\__, |\_,_\___/__/
+#                                            |___/
+#                           by AlonsoAliaga
+#          https://www.spigotmc.org/resources/authors/281176/
+#
+
+Messages:
+  No-permission: "&cYou don't have permission to do this."
+  Reloaded: "&aSome messages and options have been reloaded. Other may require a restart!"
+  Invalid-player: "&cPlayer is not online!"
+  Invalid-amount: "&cInvalid amount was provided!"
+  Invalid-league: "&cLeague is not valid!"
+  Please-reconnect: "&cSomething went wrong. Please reconnect to the server!"
+  Please-reconnect-other: "&cThe player is not registered. {PLAYER} must reconnect to the server!"
+  You-received: " &8+&d{POINTS} Point(s)!"
+  You-lost: " &8-&d{POINTS} Point(s)!"
+  You-added-to-target: "&aYou added {POINTS} point(s) to {TARGET}!"
+  You-removed-from-target: "&aYou removed {POINTS} point(s) from {TARGET}!"
+  Target-not-registered: "&cTarget is not registered!"
+  Keys:
+    Progress-bar:
+      Amount: 15
+      Character: "■"
+      #Use Complete in case you WANT to replace the default rank color. Recommended to leave it like ""
+      Complete: "" #Example: "&c"
+      Remaining: "&7"
+    Progress:
+      Format: "&a{LEAGUE_POINTS}&7/&b{REQUIRED_POINTS}"
+      Max-league: "&c&lMAX LEAGUE"
+  Add-points:
+    Cannot-add-zero: "&cCannot add zero points."
+    Error: "&cCouldn't add points to player!"
+  Remove-points:
+    Cannot-remove-zero: "&cCannot add zero points."
+    Error: "&cCouldn't remove points to player!"
+  Set-points:
+    You-set-points: "&aYou set {TARGET}'s points to {POINTS}!"
+  Reset:
+    You-reset-data: "&aYou reset {TARGET}'s data!"
+  Set:
+    Set-league: "&aYou set {TARGET}'s league to {LEAGUE}!"
+  Help:
+    Admin:
+    - "&6 /alonsoleagues stats <player> &f- &eCheck statistics of a players"
+    - "&6 /alonsoleagues addpoints <player> <points> <hide-output> &f- &eAdd points to player"
+    - "&6 /alonsoleagues addrandompoints <player> <min> <max> <hide-output> &f- &eAdd random points to player"
+    - "&6 /alonsoleagues removepoints <player> <points> <hide-ouput> &f- &eRemove points from player"
+    - "&6 /alonsoleagues setpoints <player> <points> <hide-ouput> &f- &eRemove points from player"
+    - "&6 /alonsoleagues setleague <player> <league-identifier> <hide-ouput> &f- &eSet league for player"
+    - "&6 /alonsoleagues resetdata <player> <hide-ouput> &f- &eReset data for player (Console only)"
+    - "&6 /alonsoleagues reload &f- &eReload configuration (Restart recommended)"
+    User:
+    - "&6 /alonsoleagues stats <player> &f- &eCheck statistics of a players"
+  Stats:
+    #Supports PlaceholderAPI if available.
+    Self:
+    - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    - "                &aYour statistics!"
+    - "&a "
+    - "  &7Current league: &a{LEAGUE}"
+    - "  &7Next league: &a{NEXT_LEAGUE}"
+    - "  &7Progress: &b{PROGRESS} &3{PERCENT}%"
+    - "&b "
+    - "  &7Current league points: &a{LEAGUE_POINTS}"
+    - "  &7Points to rank up: &a{REQUIRED_POINTS}"
+    - "  &7Current total points: &a{TOTAL_POINTS}"
+    - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    #Supports PlaceholderAPI if available.
+    Self-max-league:
+    - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    - "           &aYour statistics!"
+    - "             &c&lMAX LEAGUE!"
+    - "  &7Current league: &a{LEAGUE}&r"
+    - "  &7Actual points: &a{TOTAL_POINTS}"
+    - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    #Supports PlaceholderAPI if available.
+    Other:
+    - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    - "          &a{PLAYER}'s statistics"
+    - "&a "
+    - "  &7Current league: &a{LEAGUE}"
+    - "  &7Next league: &a{NEXT_LEAGUE}"
+    - "  &7Progress: &b{PROGRESS} &3{PERCENT}%"
+    - "&b "
+    - "  &7Current league points: &a{LEAGUE_POINTS}"
+    - "  &7Points to rank up: &a{REQUIRED_POINTS}"
+    - "  &7Current total points: &a{TOTAL_POINTS}"
+    - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    #Supports PlaceholderAPI if available.
+    Other-max-league:
+    - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    - "      &a{PLAYER}'s statistics"
+    - "            &c&lMAX LEAGUE!"
+    - "  &7Current league: &a{LEAGUE}&r"
+    - "  &7Actual points: &a{TOTAL_POINTS}"
+    - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+  Leaderboards:
+    League:
+      Placeholders:
+        Entry: "&e{RANKING}. &b{PLAYER} &7- &e{SCORE}"
+        No-data: "&7No data available"
+        No-name: "&7Unknown"
+        No-score: "&7Unknown"
+      Signs:
+        Score:
+        - "&c--&e #{RANKING} &c--"
+        - "&f{PLAYER}"
+        - "&b{SCORE}"
+        - "&c-------------"
+        Empty:
+        - "&c--&e #{RANKING} &c--"
+        - "&cNo player"
+        - "&bUnknown"
+        - "&c-------------"
+    Points:
+      Placeholders:
+        Entry: "&e{RANKING}. &b{PLAYER} &7- &e{SCORE}"
+        No-data: "&7No data available"
+        No-name: "&7Unknown"
+        No-score: "&7Unknown"
+      Signs:
+        Score:
+        - "&c--&e #{RANKING} &c--"
+        - "&f{PLAYER}"
+        - "&b{SCORE}"
+        - "&c-------------"
+        Empty:
+        - "&c--&e #{RANKING} &c--"
+        - "&cNo player"
+        - "&bUnknown"
+        - "&c-------------"
+
+Permissions:
+  Admin: "alonsoleagues.admin"
+  Stats-others: "alonsoleagues.stats.others"
+
+Options:
+  Debug: true
+  #Enable to use leaderboards with AlonsoLeaderboards plugin.
+  AlonsoLeaderboards:
+    Enabled: true
+    #Delay in minutes before first data load to provide information to AlonsoLeaderboards plugin.
+    Delay: 3 #Recommended: 3 - 5 minutes
+    #Interval in minutes between data update to provide information AlonsoLeaderboards plugin.
+    Interval: 10 #Recommended: 10 - 15
+  Leagues:
+    Formula:
+      #If enabled, it will calculate the ranks based on the formula provided.
+      #If false YOU MUST PROVIDE THE LEAGUES AND REQUIRED POINTS FOR EACH LEAGUE IN leagues.yml
+      Enabled: true
+      #This formula is used to calculate new leagues from leagues.yml
+      #WARNING: MAKE SURE FIRST VALUE NEVER RETURNS 0. It must returns AT LEAST 1 or it will be ignored.
+      #WARNING: This formula is processed internally using eval methods. (Javascript)
+      #That means that it can be used to modify everything internally if not used with caution.
+      #That includes files, folders, etc. Make sure only YOU have access to this. You have been WARNED!
+      #Recommended to leave this as default if you DON'T UNDERSTAND HOW IT WORKS.
+      #DO NOT EVER COPY AND PASTE FORMULAS FROM INTERNET IF YOU DON'T UNDERSTAND THEM.
+      Formula: "25*(Math.pow(INDEX,2)) + (125*INDEX) + 850"
+  Kick-on-fail:
+    Enabled: true
+    Reason:
+    #Support PlaceholderAPI, it might not properly with many plugins because is most likely that
+    #the placeholders are not loading at the moment the player is kicked. (because he just joined)
+    #Available placeholders: {PLAYER} player name, {UUID} player uuid
+    - "&cCouldn't load/register information."
+    - "&fPlease reconnect to the server."
+    - "&r"
+    - "&7If problem persists contact an administrator."
+
+
+Database:
+  #Available types: MySQL and SQLite
+  #You can use MySQL to make it global or you can use SQLite to make it local.
+  #MySQL requires a server (local or external)
+  #SQLite doesn't require anything, it's saved in a db file in the folder.
+  Type: "SQLite"
+  Table: "alonsoleagues"
+  #If type is SQLite
+  File: "database-alonsoleagues"
+  #If type is MySQL
+  Host: 127.0.0.1
+  Port: 3306
+  Database: "alonsoleagues"
+  Username: "root"
+  Password: "12345"
+  #Time in minutes to keep the connection alive before closing it. Minimum 1, maximum 45.
+  #This is to prevent issues with database related to "wait_timeout". Recommended 10 minutes.
+  Connection-pool: 10
+
+Updates:
+  #Auto update configuration? Enabling will delete comments.
+  Auto-update-configuration: true
+  #Check for updates? Recommended to keep it enabled.
+  Check-updates: true
+  #Notify updates when player with permission joins the server?
+  Notify-updates: true
+  #Permission required to receive update message.
+  Permission: "alonsoleagues.update"
+  #Message to send when update is found.
+  Message: "&6[AlonsoLeagues] &eA new update has been found! You are using version {CURRENT}. Download version {NEW} here &c{LINK}"
