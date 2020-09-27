@@ -6,7 +6,7 @@ All ranks are configurable!\
 \
 **This plugin does NOT include a quest system.**
 ## Resources
-- [Spigot resource](https://www.spigotmc.org/resources/X/)
+- [Spigot resource](https://www.spigotmc.org/resources/84268/)
 - [Issue tracker](https://github.com/AlonsoAliaga/AlonsoLeagues/issues)
 - [Donate](https://paypal.me/AlonsoAliaga)
 - [bStats](https://bstats.org/plugin/bukkit/AlonsoLeagues)
